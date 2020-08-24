@@ -1,0 +1,26 @@
+﻿<Window x:Class="Zadatak_1.View.PanPizzaWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        WindowStartupLocation="CenterScreen"
+        xmlns:local="clr-namespace:Zadatak_1.View"
+        mc:Ignorable="d"
+        Title="PanPizzaWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock TextAlignment="Center" Text="Pan Pizza" Foreground="#282828" Margin="432,10,210,368" HorizontalAlignment="Center" FontSize="25" Width="150"/>
+        <DataGrid x:Name="datagrid" ItemsSource="{Binding Recepies}" AutoGenerateColumns="False" CanUserAddRows="False" Width="335" Margin="340,72,117,89" HorizontalAlignment="Center" SelectedItem="{Binding Recepie, UpdateSourceTrigger=PropertyChanged}">
+            <DataGrid.Columns>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <ComboBox HorizontalAlignment="Left" Margin="141,72,0,0" VerticalAlignment="Top" Width="120" Height="26"/>
+        <Label Content="Pizza size:" HorizontalAlignment="Left" Margin="57,72,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="141,125,0,0" VerticalAlignment="Top" Width="120" Height="26"/>
+        <Label Content="Ingredients:" HorizontalAlignment="Left" Margin="47,125,0,0" VerticalAlignment="Top"/>
+        <Label Content="Total amount:" HorizontalAlignment="Left" Margin="37,304,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="141,309,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <Button Content="Purchise" HorizontalAlignment="Left" Margin="340,359,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="600,359,0,0" VerticalAlignment="Top" Width="75"/>
+    </Grid>
+</Window>
