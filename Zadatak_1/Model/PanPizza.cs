@@ -12,6 +12,5 @@ namespace Zadatak_1.Model
         public string Size { get; set; }
         public List<string> Ingredients { get; set; }
         public int Price { get; set; }
-
     }
 }

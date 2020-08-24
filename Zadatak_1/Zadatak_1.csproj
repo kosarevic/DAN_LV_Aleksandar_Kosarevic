@@ -59,6 +59,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Model\Ingredient.cs" />
     <Compile Include="Model\PanPizza.cs" />
     <Compile Include="ViewModel\PanPizzaViewModel.cs" />
     <Compile Include="View\PanPizzaWindow.xaml.cs">
@@ -97,8 +98,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Validation\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
