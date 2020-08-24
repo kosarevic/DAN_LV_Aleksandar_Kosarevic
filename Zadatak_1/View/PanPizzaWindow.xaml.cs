@@ -73,6 +73,9 @@ namespace Zadatak_1.View
 
         private void SendSMS(object sender, RoutedEventArgs e)
         {
+            SMSWidnow window = new SMSWidnow();
+            window.Show();
+            Close();
         }
 
     }
