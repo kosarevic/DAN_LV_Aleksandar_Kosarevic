@@ -8,12 +8,12 @@
         mc:Ignorable="d"
         Title="SMSWidnow" Height="450" Width="800">
     <Grid>
-        <Label Content="Phone Number" HorizontalAlignment="Left" Margin="186,34,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="PhoneNumber" HorizontalAlignment="Left" Height="23" Margin="289,37,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Phone Number" HorizontalAlignment="Left" Margin="186,53,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="PhoneNumber" HorizontalAlignment="Left" Height="23" Margin="289,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Label Content="Message:" HorizontalAlignment="Left" Margin="187,82,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="Message" HorizontalAlignment="Left" Height="236" Margin="187,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="413"/>
         <Button Click="SendMessage" Content="Send" HorizontalAlignment="Left" Margin="187,363,0,0" VerticalAlignment="Top" Width="75"/>
         <Button Click="Cancel" Content="Cancel" HorizontalAlignment="Left" Margin="525,363,0,0" VerticalAlignment="Top" Width="75"/>
-
+        <Label Content="Example: 381641111111 (5 SMS remaining)" HorizontalAlignment="Left" Margin="187,22,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
